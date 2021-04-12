@@ -1,0 +1,15 @@
+co\com\hitss\wshitss\EJB\AbstractFacade.class
+co\com\hitss\wshitss\EJB\UsuarioFacade.class
+co\com\hitss\ws\wsTipoDocumento.class
+co\com\hitss\wshitss\entidad\Usuario.class
+co\com\hitss\wshitss\entidad\Usuario_.class
+co\com\hitss\wshitss\EJB\UsuarioFacadeLocal.class
+co\com\hitss\wshitss\entidad\TipoDocumento.class
+co\com\hitss\wshitss\entidad\TipoDocumento_.class
+co\com\hitss\wshitss\EJB\TipoUsuarioFacadeLocal.class
+co\com\hitss\wshitss\entidad\TipoUsuario_.class
+co\com\hitss\wshitss\entidad\TipoUsuario.class
+co\com\hitss\wshitss\EJB\TipoDocumentoFacadeLocal.class
+co\com\hitss\wshitss\entidad\respuestaWS.class
+co\com\hitss\wshitss\EJB\TipoDocumentoFacade.class
+co\com\hitss\wshitss\EJB\TipoUsuarioFacade.class

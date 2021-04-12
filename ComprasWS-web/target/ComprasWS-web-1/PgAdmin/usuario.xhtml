@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <head>
+        <script>
+            
+        </script>
+    </head>
+    <body>
+
+        <ui:composition template="./../template/pageOne.xhtml">
+
+            <ui:define name="content">
+                <h:form>
+                    <p:messages id="msj" >
+                        
+                    </p:messages> 
+                    
+                    <p:panelGrid id="pgTipDoc"
+                                 columns="3"
+                                 styleClass="ui-noborder">
+                        <p:outputLabel for="TipDoc" value="Tipo Documento" />
+                        <p:inputText id="TipDoc" value="#{beanUsuario.usuario}" 
+                                     placeholder="Tipo Documento"
+                                     required="true"/>
+                        <p:message for="TipDoc"/>
+
+                        <p:outputLabel for="nomDoc" value="Nombre Documento" />
+                        <p:inputText id="nomDoc" value="#{beanLogin.tipoDocumento.nomdocumento}" 
+                                     placeholder="Nombre Documento"/>
+                        <p:message for="nomDoc"/>
+
+                        <f:facet name="footer">
+
+                            <p:commandButton value="Guardar Tipo Documento"
+                                             actionListener="#{beanLogin.registra()}"
+                                             update="pgTipDoc"
+                                             />
+                        </f:facet>
+                    </p:panelGrid>
+                </h:form>
+            </ui:define>
+
+        </ui:composition>
+
+    </body>
+</html>
